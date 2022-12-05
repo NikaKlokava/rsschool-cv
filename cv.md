@@ -20,3 +20,12 @@
   - Use _Git_ for developing production-like projects;
   - _Figma_ designs;
   - _Trello_ for managing tasks;
+# Projects: 
+   - [My zoo website](https://nikaklokava.github.io/html-css-online-zoo-website/);
+# Education: 
+     2015 - 2021 | Grodno State Medical University
+     Oncologist-surgeon
+# Languages: 
+  - _Russian_ (Native);
+  - _English_ (B1-B2);
+  - _Polish_ (Basic);
