@@ -1,3 +1,96 @@
-h1 {
-    color: aquamarine;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/*==================================== template ====================================*/
+header {
+  width: 100%;
+  background-color: #1e1f26;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+footer {
+  background-color: #283655;
+}
+
+@media (max-width: 420px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+/*==================================== header ====================================*/
+
+.navbar {
+  overflow: hidden;
+}
+
+.navbar-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.navbar-link,
+.navbar-burger-icon {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.navbar-link:hover {
+  background-color: #d2e0f4;
+}
+
+.navbar-burger-icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-item {
+    display: none;
+  }
+
+  .navbar-burger-icon {
+    float: right;
+    display: block;
+  }
+
+  .navbar-burger-icon img {
+    width: 30px;
+  }
+
+  .navbar-link {
+    width: 100%;
+  }
+
+  /*==================================== burgerView ====================================*/
+
+  .navbar.burgerView .navbar-burger-item {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar.burgerView .navbar-items {
+    flex-direction: column;
+  }
+
+  .navbar.burgerView .navbar-item {
+    display: block;
+  }
 }
