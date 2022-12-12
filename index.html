@@ -1,11 +1,237 @@
 <!DOCTYPE html>
-<html lang="eng">
-  <head>
-    <meta charset="UTF-8">
-    <title>My CV</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>About me</h1>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Veranika Klokava - CV</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="assets/ico/my_photo.ico">
+  <meta name="viewport" content="width=device-width">
+  <script src="index.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar" id="navbar">
+      <ul class="navbar-items">
+        <li class="navbar-burger-item">
+          <a href="javascript:void(0);" class="navbar-burger-icon" onclick="handleBurgerClick()">
+            <img src="assets/svg/burger.svg" alt="burger">
+          </a>
+        </li>
+        <li class="navbar-item"><a class="navbar-link" href="#contacts">Contacts</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#qualities">Qualities</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#skills">Skills</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#code">Code</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#projects">Projects</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#education">Education</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#languages">Languages</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="primary-content flex-column">
+      <section class="profile flex-column">
+        <h1>Veranika Klokava</h1>
+        <h3>Junior front-end developer</h3>
+        <img src="assets/img/my_photo.jpg" alt="my_photo">
+      </section>
+      <section class="contacts" id="contacts">
+        <h2>Contacts</h2>
+        <ul>
+          <li class="flex-row">
+            <img class="icons" src="assets/svg/location.svg" alt="location">
+            <a href="https://goo.gl/maps/PiHD5JsdLCuJsbs38">Belarus, Hrodna</a>
+          </li>
+          <li class="flex-row">
+            <img class="icons" src="assets/svg/email.svg" alt="email">
+            <a href="mailto:veronika.kazakevich1997@gmail.com">veronika.kazakevich</a>
+          </li>
+          <li class="flex-row">
+            <img class="icons" src="assets/svg/github.svg" alt="github">
+            <a href="https://github.com/NikaKlokava">github.com/NikaKlokava</a>
+          </li>
+          <li class="flex-row">
+            <img class="icons" src="assets/svg/telegram.svg" alt="telegram">
+            <a href="https://t.me/nikageor">t.me/nikageor</a>
+          </li>
+          <li class="flex-row">
+            <img class="icons" src="assets/svg/instagram.svg" alt="instagram">
+            <a href="https://www.instagram.com/nika_klokava" class="instagram">inst/nika_klokava</a>
+          </li>
+        </ul>
+      </section>
+      <section class="about-me" id="qualities">
+        <h2>About Me</h2>
+        <ul>
+          <li class="flex-row"><img class="icons" src="assets/svg/okey.svg" alt="okey">
+            <p>Responsible and disciplined;</p>
+          </li>
+          <li class="flex-row"><img class="icons" src="assets/svg/okey.svg" alt="okey">
+            <p>Diligent at work;</p>
+          </li>
+          <li class="flex-row"><img class="icons" src="assets/svg/okey.svg" alt="okey">
+            <p>Sociable and open for contact;</p>
+          </li>
+          <li class="flex-row"><img class="icons" src="assets/svg/okey.svg" alt="okey">
+            <p>Have a good leadership qualities;</p>
+          </li>
+          <li class="flex-row"><img class="icons" src="assets/svg/okey.svg" alt="okey">
+            <p>Able to work in a team;</p>
+          </li>
+          <li class="flex-row"><img class="icons" src="assets/svg/okey.svg" alt="okey">
+            <p>Quickly complete tasks;</p>
+          </li>
+          <li class="flex-row"><img class="icons" src="assets/svg/okey.svg" alt="okey">
+            <p>Always interested in gaining new knowledge;</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="secondary-content flex-column">
+      <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <p>HTML</p>
+          <div class="progress">
+            <div title="Novice" class="active"></div>
+            <div title="Intermediate" class="active"></div>
+            <div title="Advanced"></div>
+            <div title="Expert"></div>
+          </div>
+          <p>CSS/SCSS</p>
+          <div class="progress">
+            <div title="Novice" class="active"></div>
+            <div title="Intermediate"></div>
+            <div title="Advanced"></div>
+            <div title="Expert"></div>
+          </div>
+          <p>JavaScript</p>
+          <div class="progress">
+            <div title="Novice" class="active"></div>
+            <div title="Intermediate"></div>
+            <div title="Advanced"></div>
+            <div title="Expert"></div>
+          </div>
+          <p>Git</p>
+          <div class="progress">
+            <div title="Novice" class="active"></div>
+            <div title="Intermediate" class="active"></div>
+            <div title="Advanced"></div>
+            <div title="Expert"></div>
+          </div>
+          <p>Figma designs</p>
+          <div class="progress">
+            <div title="Novice" class="active"></div>
+            <div title="Intermediate"></div>
+            <div title="Advanced"></div>
+            <div title="Expert"></div>
+          </div>
+          <p>Trello</p>
+          <div class="progress">
+            <div title="Novice" class="active"></div>
+            <div title="Intermediate" class="active"></div>
+            <div title="Advanced"></div>
+            <div title="Expert"></div>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li class="flex-row">
+            <img class="icons" src="assets/svg/panda.svg" alt="panda">
+            <a href="https://nikaklokava.github.io/html-css-online-zoo-website/">My web-zoo</a>
+          </li>
+        </ul>
+      </section>
+      <section class="code" id="code">
+        <h2>Code</h2>
+        <p>
+          <code>
+            function filterArray(array, a, b) {
+            <br>
+            return arr.filter(item => (item >=a && item &lt;=b)); <br>
+            }
+            <br>
+            let array = [5, 3, 8, 1];<br>
+            let filtered = filterRange(array, 1, 4);<br>
+            alert(filtered);
+          </code>
+        </p>
+      </section>
+      <section class="education" id="education">
+        <h2>Education</h2>
+        <div class="education-container">
+          <div class="flex-row">
+            <img class="icons" src="assets/svg/education.svg" alt="education">
+            <a href="http://www.grsmu.by/">Grodno State Medical University</a>
+          </div>
+          <p>2015 - 2021 Oncologist-surgeon</p>
+        </div>
+      </section>
+      <section class="languages" id="languages">
+        <h2>Languages</h2>
+        <div class="languages-container">
+          <p>English: B2 (Upper intermediate)</p>
+          <div class="flex-row">
+            <div class="ellipse active"></div>
+            <div class="ellipse active"></div>
+            <div class="ellipse active"></div>
+            <div class="ellipse active"></div>
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+          </div>
+          <p>Belorussian: Native</p>
+          <div class="flex-row">
+            <div class="ellipse active"></div>
+            <div class="ellipse active"></div>
+            <div class="ellipse active"></div>
+            <div class="ellipse active"></div>
+            <div class="ellipse active"></div>
+            <div class="ellipse active"></div>
+          </div>
+          <p>Polish: A2 (Elementary)</p>
+          <div class="flex-row">
+            <div class="ellipse active"></div>
+            <div class="ellipse active"></div>
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+          </div>
+          <p>Russian: Native</p>
+          <div class="flex-row">
+            <div class="ellipse active"></div>
+            <div class="ellipse active"></div>
+            <div class="ellipse active"></div>
+            <div class="ellipse active"></div>
+            <div class="ellipse active"></div>
+            <div class="ellipse active"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <ul class="footer flex-row">
+      <li>
+        <a href="https://github.com/NikaKlokava" class="github">
+          <img class="icons footer-github-icon" src="assets/svg/github-white.svg" alt="github">
+        </a>
+      </li>
+      <li>
+        <p class="footer-date">Created in<br>2022</p>
+      </li>
+      <li>
+        <a href="https://rs.school/js-stage0/">
+          <img class="footer-rsschool-icon" src="assets/svg/rs_school_js.svg" alt="rsschool">
+        </a>
+      </li>
+    </ul>
+  </footer>
+</body>
 </html>
