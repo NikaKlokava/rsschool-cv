@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*============================================ template ============================================*/
+header {
+  width: 100%;
+  background-color: #1e1f26;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+footer {
+  background-color: #283655;
+}
+
+/*============================================ common styles ============================================*/
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+a,
+p {
+  font-family: 'Alegreya', sans-serif;
+  color: #1e1f26;
+}
+
+h1,
+h2 {
+  font-size: 2em;
+  font-style: italic;
+  text-transform: uppercase;
+  border-bottom: 3px solid #1e1f26;
+}
+
+h1,
+h3 {
+  line-height: 30px;
+}
+
+h3,
+a,
+p {
+  font-size: 1.2em;
+}
+
+a,
+p {
+  margin: 0px;
+}
+
+h2,
+a:hover,
+.navbar-link:hover {
+  text-shadow: 0px 1px 2px #4d648d;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 10px;
+  margin: 0px;
+  text-shadow: 0px 0px 5px #4d648d;
+}
+
+h3 {
+  border-bottom: 1px solid #1e1f26;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+.navbar-link:hover {
+  color: #4d648d;
+  transition: 1s;
+}
+
+.icons {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.progress {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.progress div {
+  width: 50px;
+  height: 20px;
+  margin-left: 1px;
+  margin-right: 1px;
+  border: 1px solid black;
+  background-color: #d2e0f4;
+}
+
+.progress div:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.progress div:last-child {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.ellipse {
+  width: 20px;
+  height: 20px;
+  background-color: #accdd253;
+  border-radius: 10px;
+}
+
+.active,
+.progress div.active {
+  background-color: #1e1f26;
+}
+
+/*============================================ header ============================================*/
+
+.navbar {
+  overflow: hidden;
+}
+
+.navbar-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.navbar-link,
+.navbar-burger-icon {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.navbar-link:hover {
+  background-color: #d2e0f4;
+}
+
+.navbar-burger-icon {
+  display: none;
+}
+
+/*============================================ main ============================================*/
+.primary-content,
+.secondary-content {
+  justify-content: space-around;
+  padding: 0em 2em 2em 2em;
+}
+
+.primary-content {
+  background-color: #d2e0f4;
+}
+
+.profile {
+  align-items: center;
+}
+
+.profile>img {
+  width: 70%;
+  border: 8px solid #1e1f26;
+  border-radius: 50%;
+  box-shadow: 0px 8px 20px 0px #1e1f26;
+}
+
+.about-me img,
+.contacts img {
+  margin-right: 15px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  row-gap: 15px;
+}
+
+.code>p {
+  text-shadow: 0px 0px 1px #283655;
+}
+
+.languages-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+/*============================================ footer ============================================*/
+.footer {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer .footer-github-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.footer .footer-rsschool-icon {
+  width: 80px;
+}
+
+.footer .footer-date {
+  text-align: center;
+  color: #d2e0f4;
+}
+
+/*========================================= mobile ============================================*/
+@media (max-width: 420px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-item {
+    display: none;
+  }
+
+  .navbar-burger-icon {
+    float: right;
+    display: block;
+  }
+
+  .navbar-burger-icon img {
+    width: 30px;
+  }
+
+  .navbar-link {
+    width: 100%;
+  }
+
+  .navbar.burgerView .navbar-burger-item {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar.burgerView .navbar-items {
+    flex-direction: column;
+  }
+
+  .navbar.burgerView .navbar-item {
+    display: block;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .skills-container,
+  .languages-container {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+}
