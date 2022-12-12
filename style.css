@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/*==================================== template ====================================*/
+/*============================================ template ============================================*/
 header {
   width: 100%;
   background-color: #1e1f26;
@@ -25,13 +25,7 @@ footer {
   background-color: #283655;
 }
 
-@media (max-width: 420px) {
-  main {
-    grid-template-columns: 1fr;
-  }
-}
-
-/*==================================== common styles ====================================*/
+/*============================================ common styles ============================================*/
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -41,7 +35,6 @@ footer {
   display: flex;
 }
 
-/********************/
 h1,
 h2,
 h3,
@@ -81,7 +74,6 @@ a:hover,
   text-shadow: 0px 1px 2px #4d648d;
 }
 
-/******************************/
 h1 {
   text-align: center;
   letter-spacing: 10px;
@@ -151,7 +143,7 @@ a:hover,
   background-color: #1e1f26;
 }
 
-/*==================================== header ====================================*/
+/*============================================ header ============================================*/
 
 .navbar {
   overflow: hidden;
@@ -182,43 +174,7 @@ a:hover,
   display: none;
 }
 
-@media screen and (max-width: 800px) {
-  .navbar-item {
-    display: none;
-  }
-
-  .navbar-burger-icon {
-    float: right;
-    display: block;
-  }
-
-  .navbar-burger-icon img {
-    width: 30px;
-  }
-
-  .navbar-link {
-    width: 100%;
-  }
-
-  /*==================================== burgerView ====================================*/
-
-  .navbar.burgerView .navbar-burger-item {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .navbar.burgerView .navbar-items {
-    flex-direction: column;
-  }
-
-  .navbar.burgerView .navbar-item {
-    display: block;
-  }
-}
-
-/*========================================= main ====================================*/
-/* primary-content */
+/*============================================ main ============================================*/
 .primary-content,
 .secondary-content {
   justify-content: space-around;
@@ -245,7 +201,6 @@ a:hover,
   margin-right: 15px;
 }
 
-/*secondary*/
 .skills-container {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -261,6 +216,66 @@ a:hover,
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 20px;
+}
+
+/*============================================ footer ============================================*/
+.footer {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer .footer-github-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.footer .footer-rsschool-icon {
+  width: 80px;
+}
+
+.footer .footer-date {
+  text-align: center;
+  color: #d2e0f4;
+}
+
+/*========================================= mobile ============================================*/
+@media (max-width: 420px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-item {
+    display: none;
+  }
+
+  .navbar-burger-icon {
+    float: right;
+    display: block;
+  }
+
+  .navbar-burger-icon img {
+    width: 30px;
+  }
+
+  .navbar-link {
+    width: 100%;
+  }
+
+  .navbar.burgerView .navbar-burger-item {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar.burgerView .navbar-items {
+    flex-direction: column;
+  }
+
+  .navbar.burgerView .navbar-item {
+    display: block;
+  }
 }
 
 @media (max-width: 420px) {
