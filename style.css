@@ -9,6 +9,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
 /*==================================== template ====================================*/
 header {
   width: 100%;
@@ -29,6 +30,7 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
 /*==================================== common styles ====================================*/
 .flex-column {
   display: flex;
@@ -148,6 +150,7 @@ a:hover,
 .progress div.active {
   background-color: #1e1f26;
 }
+
 /*==================================== header ====================================*/
 
 .navbar {
@@ -213,6 +216,7 @@ a:hover,
     display: block;
   }
 }
+
 /*========================================= main ====================================*/
 /* primary-content */
 .primary-content,
@@ -220,9 +224,11 @@ a:hover,
   justify-content: space-around;
   padding: 0em 2em 2em 2em;
 }
+
 .primary-content {
   background-color: #d2e0f4;
 }
+
 .profile {
   align-items: center;
 }
@@ -237,4 +243,11 @@ a:hover,
 .about-me img,
 .contacts img {
   margin-right: 15px;
+}
+/*secondary*/
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  row-gap: 15px;
 }
