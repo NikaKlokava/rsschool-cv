@@ -29,6 +29,125 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/*==================================== common styles ====================================*/
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+}
+
+/********************/
+h1,
+h2,
+h3,
+a,
+p {
+  font-family: 'Alegreya', sans-serif;
+  color: #1e1f26;
+}
+
+h1,
+h2 {
+  font-size: 2em;
+  font-style: italic;
+  text-transform: uppercase;
+  border-bottom: 3px solid #1e1f26;
+}
+
+h1,
+h3 {
+  line-height: 30px;
+}
+
+h3,
+a,
+p {
+  font-size: 1.2em;
+}
+
+a,
+p {
+  margin: 0px;
+}
+
+h2,
+a:hover,
+.navbar-link:hover {
+  text-shadow: 0px 1px 2px #4d648d;
+}
+
+/******************************/
+h1 {
+  text-align: center;
+  letter-spacing: 10px;
+  margin: 0px;
+  text-shadow: 0px 0px 5px #4d648d;
+}
+
+h3 {
+  border-bottom: 1px solid #1e1f26;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+.navbar-link:hover {
+  color: #4d648d;
+  transition: 1s;
+}
+
+.icons {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.progress {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.progress div {
+  width: 50px;
+  height: 20px;
+  margin-left: 1px;
+  margin-right: 1px;
+  border: 1px solid black;
+  background-color: #d2e0f4;
+}
+
+.progress div:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.progress div:last-child {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.ellipse {
+  width: 20px;
+  height: 20px;
+  background-color: #accdd253;
+  border-radius: 10px;
+}
+
+.active,
+.progress div.active {
+  background-color: #1e1f26;
+}
 /*==================================== header ====================================*/
 
 .navbar {
@@ -93,4 +212,29 @@ footer {
   .navbar.burgerView .navbar-item {
     display: block;
   }
+}
+/*========================================= main ====================================*/
+/* primary-content */
+.primary-content,
+.secondary-content {
+  justify-content: space-around;
+  padding: 0em 2em 2em 2em;
+}
+.primary-content {
+  background-color: #d2e0f4;
+}
+.profile {
+  align-items: center;
+}
+
+.profile>img {
+  width: 70%;
+  border: 10px solid #1e1f26;
+  border-radius: 250px;
+  box-shadow: 0px 8px 20px 0px #1e1f26;
+}
+
+.about-me img,
+.contacts img {
+  margin-right: 15px;
 }
